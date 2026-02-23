@@ -34,5 +34,7 @@ const updateChai = (updates) => {
 };
 updateChai({ price: 25 });
 updateChai({ isHot: false });
-updateChai({}); // This actually creates an issue since it will start taking empty objects as well
+updateChai({}); // This actually creates an issue since it will start taking empty objects as well and this will not throw error.
+// The use like Partial is of 'Required' -- Required makes all the properties mandatory to pass ( no skipping of properties or changing of datatypes allowed)
+// Pick is another type -- let's us choose 4 properties out of 6 properties ( if we only require them )
 //# sourceMappingURL=objects.js.map
